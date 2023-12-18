@@ -1,0 +1,13 @@
+#error{
+  text-align: center;
+    font-size: 50px;
+    color: crimson;
+
+}
+tbody{
+    font-size: 20px;
+    font-weight: bold;
+}
+#leave{
+  color: blue;
+}
