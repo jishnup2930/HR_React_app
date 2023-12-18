@@ -1,21 +1,5 @@
 import {  NavLink } from 'react-router-dom';
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
-
 import './navbar.css';
-
-// export default function Header() {
-
-
-//   return (
-//   <nav className="navbar navbar-expand-lg navbar-light bg-light">
-//     <div className="container-fluid">
-//       <NavLink to={'/home'} className="navbar-brand">HRMS</NavLink>
-//       <NavLink to={'/emp/'} className="navbar-brand">Employees</NavLink>
-//       <NavLink to={'/about'} className="navbar-brand">About</NavLink>
-//     </div>
-//   </nav>
-//   )
-// }
 
 export default function Header() {
 
