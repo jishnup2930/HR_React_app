@@ -13,3 +13,18 @@ div h1{
     text-align: center;
     padding-right: 50px;
 }
+#key{
+    color: rgb(4, 0, 255);
+    font-size: medium;
+}
+#key:hover{
+    color: crimson;
+}
+#key:focus{
+    color: crimson;
+}
+.list{
+    padding-left: 20px;
+    float: left;
+
+}
