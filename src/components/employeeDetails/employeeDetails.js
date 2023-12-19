@@ -32,7 +32,7 @@ const EmployeeDetails = () => {
   }
 
   return (
-    <div  className="container-fluid">
+    <div id="detail" className="container-fluid">
       <div className="row">
         <div id='one' className="col-4">
             <Employee key={'employee.id'}/>
