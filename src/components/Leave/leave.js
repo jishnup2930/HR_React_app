@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import Spinner from "../spinner.tsx";
 
 function LeaveForm({ onLeaveSubmit }) {
   const [leaveDate, setLeaveDate] = useState("");
@@ -68,7 +67,6 @@ function LeaveForm({ onLeaveSubmit }) {
         <br />
 
         <button type="submit"> Submit</button>
-        <Spinner />
       </form>
     </div>
   );
