@@ -1,7 +1,7 @@
 
 
 body{
-    background-image: url(../../../public/hamon.png);
+    background-image: url(home1.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -29,3 +29,6 @@ body{
     font-size: 4vw;
     margin-top: 10vh;
   }
+.btn{
+  background-color: blue;
+}
