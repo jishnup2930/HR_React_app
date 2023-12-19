@@ -22,7 +22,7 @@ export default function Employee() {
     <div className="container-fluid">
       <div className="row">
         <h1>Employee Details</h1>
-        <div className="col-6">
+        <div className="col-7">
           <div className="list">
             {employee.map((data) => (
               <p key={'data.id'}>
