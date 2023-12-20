@@ -6,6 +6,7 @@ function Home() {
   return (
     <Fragment>
       <body>
+        
         <div className="home">
           <div>
             <h1>WELCOME TO HAMON HRMS</h1>
@@ -18,7 +19,7 @@ function Home() {
             </p>
           </div>
           <div>
-            <NavLink to={"/contact"} className="btn btn-secondary btn-lg">
+            <NavLink to={"/contact"} className="btn btn-secondary btn-lg" id="home-button">
               Get in touch
             </NavLink>
           </div>
