@@ -6,10 +6,10 @@ function About() {
   return (
     <div className="container-fluid">
       <div>
-        <NavLink to={"/home"} className="btn btn-secondary btn-lg">
+        <NavLink to={"/home"} className="btn btn-secondary btn-lg" id="about-button">
           Back to Home
         </NavLink>
-        
+        <div id="head">
         <h2>About Hamon</h2>
         <p>
           Hamon is a dynamic and innovative software development company that
@@ -106,6 +106,7 @@ function About() {
           company dedicated to driving digital transformation and empowering
           businesses through technology.
         </p>
+        </div>
       </div>
     </div>
   );
