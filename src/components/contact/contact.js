@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './contact.css';
 
 const Contact = () => {
   const emailAddress = 'contact@hamontech.com';
@@ -27,7 +28,7 @@ const Contact = () => {
         </div>
       </p>
       <div>
-        <NavLink to={"/home"} className="btn btn-secondary btn-lg">
+        <NavLink to={"/home"} className="btn btn-secondary btn-lg" id="button">
           Back to Home
         </NavLink>
       </div>
