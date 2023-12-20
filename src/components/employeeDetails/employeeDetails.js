@@ -26,7 +26,7 @@ const EmployeeDetails = () => {
 
   if (!employee) {
     return <div id="error">
-        Employee ID out of range.!
+        Employee ID not found.!
         <Spinner />
     </div>;
   }
