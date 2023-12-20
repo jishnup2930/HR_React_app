@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import './leave.css';
 
 function LeaveForm({ onLeaveSubmit }) {
   const [leaveDate, setLeaveDate] = useState("");
@@ -29,6 +30,7 @@ function LeaveForm({ onLeaveSubmit }) {
         setLeaveDate("");
         setLeaveReason("");
         console.log("Leave submitted successfully!");
+        window.alert("Leave submitted successfully!")
       } else {
         console.error('Submission failed');
         window.alert("Submission failed");
@@ -50,11 +52,8 @@ function LeaveForm({ onLeaveSubmit }) {
           value={leaveDate}
           onChange={(e) => setLeaveDate(e.target.value)}
         />
-        <br />
-        <br />
 
         <label htmlFor="leave_reason">Reason:</label>
-        <br />
         <textarea
           id="leave_reason"
           name="leave_reason"
@@ -64,9 +63,8 @@ function LeaveForm({ onLeaveSubmit }) {
           onChange={(e) => setLeaveReason(e.target.value)}
         ></textarea>
         <br />
-        <br />
 
-        <button type="submit"> Submit</button>
+        <button id="leave-button" type="submit"> Submit</button>
       </form>
     </div>
   );
