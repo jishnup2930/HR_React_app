@@ -1,0 +1,8 @@
+#leave-button{
+    flex-basis: 48%;
+    background-color: #3c00a0;
+    color: #fff;
+    outline: 10;
+    cursor: pointer;
+    transition: background 1s;
+}
