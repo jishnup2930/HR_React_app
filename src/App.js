@@ -8,6 +8,7 @@ import EmployeeDetails from './components/employeeDetails/employeeDetails.js';
 import LeaveForm from './components/Leave/leave.js';
 import About from './components/about/index.js';
 import Contact from './components/contact/contact.js';
+import Vcard from './components/vcard/vcard.js';
 
 function App() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function App() {
         <Route path="/employees/:id" element={<LeaveForm />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/vcard" element={<Vcard />} />
       </Routes>
     </div>
   );
