@@ -4,6 +4,7 @@ import './employeeDetails.css'
 import Employee from "../employees";
 import LeaveForm from "../Leave/leave";
 import Spinner from "../spinner.tsx";
+import Vcard from "../vcard/vcard.js";
 
 const EmployeeDetails = () => {
   const { id } = useParams();
@@ -70,7 +71,7 @@ const EmployeeDetails = () => {
             </div>
         </div>
         <div id='one' className="col-3">
-          <div>
+          <Vcard />
             <h1 id="leave">Leave Details</h1>
             <table>
               <tbody>
@@ -85,7 +86,7 @@ const EmployeeDetails = () => {
               </tbody>
             </table>
 
-          </div>
+          
         </div>
       </div>
       
