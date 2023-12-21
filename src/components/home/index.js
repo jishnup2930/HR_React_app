@@ -23,6 +23,7 @@ function Home() {
               Get in touch
             </NavLink>
           </div>
+      
         </div>
       </body>
     </Fragment>
