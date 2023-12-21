@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import './employeeDetails.css'
+import "./employeeDetails.css";
 import Employee from "../employees";
 import LeaveForm from "../Leave/leave";
 import Spinner from "../spinner.tsx";
@@ -26,20 +26,24 @@ const EmployeeDetails = () => {
   }, [id]);
 
   if (!employee) {
-    return <div id="error">
+    return (
+      <div id="error">
         Employee ID not found.!
         <Spinner />
-    </div>;
+      </div>
+    );
   }
 
   return (
     <div id="detail" className="container-fluid">
       <div className="row">
-        <div id='one' className="col-4">
-            <Employee key={'employee.id'}/>
-            </div>
-            <div className="col-5">
-          <h1 id="name">{employee.fname} {employee.lname}</h1>
+        <div id="one" className="col-4">
+          <Employee key={"employee.id"} />
+        </div>
+        <div className="col-5">
+          <h1 id="name">
+            {employee.fname} {employee.lname}
+          </h1>
           <h2>{employee.title}</h2>
           <table>
             <tbody>
@@ -53,7 +57,7 @@ const EmployeeDetails = () => {
               </tr>
               <tr>
                 <th> ID</th>
-                <td>{ employee.id}</td>
+                <td>{employee.id}</td>
               </tr>
               <tr>
                 <th>Email</th>
@@ -65,33 +69,29 @@ const EmployeeDetails = () => {
               </tr>
             </tbody>
           </table>
-          <div id='leave'>
-          <h1 id="leave" >Add leave</h1>
-          <LeaveForm onLeaveSubmit={handleLeaveSubmit} />
-            </div>
+          <div id="leave">
+            <h1 id="leave">Add leave</h1>
+            <LeaveForm onLeaveSubmit={handleLeaveSubmit} />
+          </div>
         </div>
-        <div id='one' className="col-3">
+        <div id="one" className="col-3">
           <Vcard />
-            <h1 id="leave">Leave Details</h1>
-            <table>
-              <tbody>
-                <tr>
-                  <th>Max leaves</th>
-                  <td>{employee.max_leaves}</td>
-                </tr>
-                <tr>
-                  <th>Leaves taken</th>
-                  <td>{employee.leave}</td>
-                </tr>
-              </tbody>
-            </table>
-
-          
+          <h1 id="leave">Leave Details</h1>
+          <table>
+            <tbody>
+              <tr>
+                <th>Max leaves</th>
+                <td>{employee.max_leaves}</td>
+              </tr>
+              <tr>
+                <th>Leaves taken</th>
+                <td>{employee.leave}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      
     </div>
-    
   );
 };
 
